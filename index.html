@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiro site</title>
+    <link rel="shortcut icon" href="Goescat-Macaron-Gimp.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <style>  
+        div{
+            display: inline-block;
+            background-color: gray;
+            height: 100px;
+            width: 100px;
+            text-align: center;
+        }
+
+        div:hover {
+            background-color: yellowgreen;
+        }
+
+        div > p {
+            display: none;
+        }
+
+        div:hover > p {
+            display: block;
+            background-color: gray;
+        }
+    </style>
+</head>
+<body>
+<header>
+        <section class="cabeca">
+            <h1>Quem sou eu ?</h1>
+            <p>Me chamo Erick Coutinho. Tenho 18 anos e nasci no ano de 2003 em Mato grosso do Sul. Entretanto, morei apenas 1 ano lá e, desde então, estou em Indaiatuba há 17 anos.
+                <p>Sou uma pessoa que gosta de sempre estar aprendendo coisas novas, assim como também fazer novas amizades para acrescentarem momentos especiais em minha vida.</p>
+                <p>Estou me especializando em áreas de T.I, bucando cursos e novas linguagens. Por enquanto ainda sou novo nesta area, entretanto, já estou fazendo meu superior em Análise e desenvolvimento de Sistema</p></p>
+        </section>
+</header>
+<main>
+<section class="ensinamentos">
+                           <h1>Ensinamentos</h1>
+                               <p>Fiz este site com o intúito de melhorar e ter experiência em criação de site. Aqui, irei utilizar os seguintes programas:</p>
+                               <img src="imagens/Logo HTML 256.png" alt="Logo HTML5">
+                               <img src="imagens/Logo CSS 256.png" alt="Logo Css">
+                               <img src="https://cdn.iconscout.com/icon/free/png-256/javascript-2038874-1720087.png" alt="imagem externa">
+                               <p>por hora, vou acrescentar, neste site,conteúdos que venho aprendendo ao longo do <blockquote> <abbr title="Guanabara">Curso Em Vídeo</abbr></blockquote>
+                               </p>
+                               <h3>
+                                   Alguns comandos colocarei em outra página.
+                               </h3>
+                               <h3>
+                                   <a href="tags.html" target="_blank" rel="next">comandos usados</a>
+                               </h3>
+                                <h2>Finalidade:</h2>
+                                <ul>
+                                    <li>Utilizar como estudo</li>
+                                    <li>Fazer anotações</li>
+                                </ul>
+</section>
+<hr>
+<section class="listas">
+                                       <h1>Listas</h1>
+                                       <p>Podemos criar dois tipos de listas, como ás UL:</p>
+                                       <ul>
+                            <li>pelo comando ol</li>
+                            <li>que possui como princípio de</li>
+                            <li>criar tópicos</li>
+                                       </ul>
+                                       <h3>Além disso podemos mudar as formas do tópico.</h3>
+                                       <ul type="square">
+                        <li> Para Square</li>
+                                       </ul>
+                                       <ul type="circle">
+                        <li>Para Circle</li>
+                                       </ul>
+                                       <ul type="disc">
+                        <li>Para Disc</li>
+                                       </ul>
+                                       <h2> Como também há as OL:</h2>
+                                       <ol>
+                        <li>ela tem função de</li>
+                        <li>enumerar os tópicos</li>
+                        <li>assim como podemos mudar a ordem</li>
+                        <li>de um tópico, sem afetar os outras</li>
+                                       </ol>
+                                       <h3>Além disso podemos mudar as formas dos números</h3>
+                                       <ol type="a">
+                                       <li>Para letras minúsculas</li>
+                                       </ol>
+                                       <ol type="A">
+                                       <li>Para letras maiúsculas</li>
+                                       </ol>
+                                       <ol type="i">
+                        <li>Romanas minúsculas</li>
+                                       </ol>
+                                       <ol type="I">
+                        <li>Romanas maiúsculas</li>
+                                       </ol>
+                                       <h2>Subtópicos</h2>
+                                       <ol>
+                        <li>conseguimos criar um tópico</li>
+                        <ol>
+                            <li>dentro de outro tópico.</li>
+                        </ol>
+                                       </ol>
+                                       <h3>para fazer com que o subtópico começa em um número desejado, basta pôr start="x"</h3>
+                                       <ol>
+                        <li>Assim o conteúdo fica mais</li>
+                        <ol start="2">
+                            <li>"apresentável"</li>
+                        </ol>
+                                       </ol>
+                                       <h3>Para os tópicos em letras, utilizamos o Start no número que a letra é encontrada</h3>
+                                       <ol type="a">
+                        <li>Como a letra E, sendo a 5º</li>
+                        <ol type="a" start="5">
+                            <li>logo, será "start="5""</li>
+                        </ol>
+                                       </ol>
+</section>
+<hr>
+<section class="links">
+                                       <h1>Links</h1>
+                                       <h2>
+                        <ul><li>Externo</li></ul>
+                                       </h2>
+                                       <p>
+                                       Talvez um dos assuntos mais importantes que aprendi no <a href="https://youtube.com/cursoemvideo/" target="_blank" rel="external">curso em vídeo</a> é sem dúvidas a ancoragem de link.
+                                       </p>
+                                       <p>
+                        Podemos ter links externo; Os que redirecionam você para um site da internet <blockquote>a href="..." target="_blank" rel="external" a</blockquote>
+                                       </p>
+                                       <h2>
+                        <ul><li>Interno</li></ul>
+                                       </h2>
+                                       <p>
+                        Também podemos ter links interno; aqueles que redicionará para uma página própia que esteja dentro dos arquivos.
+                                       </p>
+                                       <p> <a href="pagina2.html" rel="next">página 2</a></p>
+                                       <p>
+                        Neste caso, precisamos usar o "Target="_blank" rel="next" para dar um sentido semântico. E, na outra página, usamos rel="prev" para voltar a esta.
+                                       </p>
+                                       <h2>
+                        <ul><li>Redirecionamento</li></ul>
+                                       </p>
+                                       <h2>
+                        Podemos, também, abrir o link automaticamente em uma nova guia com o comando 'target="_bank" '
+                                       </p>
+                                       <p><a href="pagina2.html" target="_blank" rel="next">página 2</a></p>
+                                       <h2>
+                        <ul><li>Nova Pasta</li></ul>
+                                       </h2>
+                                       <p>
+                        É possível criar um redirecionamento em uma nova pasta diferente da que esteja criando o site. Ou seja, podemos acessar sites que estejam em um local diferente da que estamos criando.
+                                       </p>
+                                       <p><a href="Nova Pasta/página3.html" rel="next">página 3</a></p>
+                                       <hr>
+                                       <h1>
+                        Links para Download
+                                       </h1>
+                        <p>Basicamente, os passos para fazer download é os mesmo que usar um link externo, porém, devemos utilizar os códigos da <a href="https://www.iana.org/assignments/media-types/media-types.xhtml" target="_blank" rel="external">Media types</a>, a tag "download=(nome do arquivo)" e por fim, "type=(tipo de Media Type)"
+                        </p>
+                                       <p><p></p>
+                        <a href="pds/sequencia-fibonacci.zip" download="sequencia-fibonacci.zip" type="application/zip">Download de um arquivo zip</a>
+                                       </p>
+</section>
+<hr>
+<section class="imagens">
+                                       <h1>Imagens Dinâmicas</h1>
+                                       <p>
+                                        Ao inserirmos uma imagem, podemos ter um problema de dinâmica, onde a renderização da imagem acaba por ser diferente da "tela oferecida". Ou seja, ao abrirmos uma imagem grande pelo computador, onde há uma tela maior, a imagem acabará por ficar "justa". Agora, ao abrirmos pelo celular, onde possui uma tela menor, esta imagem ficará exageradamente maior e estragará a experiência do usuário.
+                                       </p>
+                        <p>
+                            Podemos fazer com que uma imagem, ao atingir o tamanho em px programado, altere a figura.
+                        </p>
+                        <position class="posicao">
+                            <picture class="imagens-posicao">
+                            <source class="imagens-1" media="(max-width: 1050px)" srcset="imagens/m7.jpg" type="image/jpg">
+                            <img class="imagens-2" src="imagens/m6.jpg" alt="imagem flexivel"> 
+                            <!--Neste caso, a tag IMG será a base e, caso página tenha menos de 1050px, aparecerá a Source-->
+                            </picture>
+                        </position>
+                        <h4>
+                            (Diminua a janela do navegador para alterar a imagem)
+                        </h4>
+</section>
+<hr>
+<section class="audios">
+                                           <h1>Áudios</h1>
+                                           <p>
+                                                                   Podemos pôr diversos tipos de áudios como <cite>MP3, OGG, WAV</cite> e etc. Assim como também podemos escolher para tocar manualmente, automaticamente ou quando todo o site carregar para o usuário.
+                                           </p>
+                                           <p> Podemos utilizar a tag "source" para defirmos mais de uma opção. Ou seja, podemos pôr o mesmo áudio em dois tipos de aquivos; mp3 e ogg. Assim, se o navegador nao reconhecer a Source do MP3, irá utilizar a Source da OGG. Isso se aplica a qualquer tipo de fonte, não só áudios.</p>
+                                           <audio controls>
+                                                                   <source src="Audios/Maestria.mp3" type="audio/mpeg">
+                                           </audio>
+</section>
+<hr>
+<section class="css">
+                                           <h1>CSS</h1>
+                                           <ol>
+                                                                   <h1>CSS In-Line</h1>
+                                                                   <li>
+                                                                       <p style="text-align: justify;">
+                                                                           Temos o método mais "atrasado" que seria o jeito "Inline". Como pelo próprio nome diz, utilizamos esse método direto na tag para mudar o visual. Entretanto, por ser inline, acaba por dificultar a praticidade já que precisaremos pôr a alteração de tag em tag. Ou seja, se mudarmos a cor de uma frase e quisermos mudar do restante, precisaremos fazer de tag em tag.
+                                                                       </p>
+                                                                       <h3>
+                                                                           o texto acima está alinhado devido a tag "text-align: justify"
+                                                                       </h3>
+                                                                   </li>
+                                                                   <h1>CSS Interno</h1>
+                                                                   <li>
+                                                                       <p>
+                                                                           Outro método seria o CSS Interno que tem como função de alterar de uma forma em geral todas as tags selecionadas. Tudo isso é feito pelo Style dentro de Head. Ou seja, caso desejemos mudar 5 tag's "h1", com o CSS Interno conseguiríamos rapidamente se compadado com método anterior
+                                                                       </p>
+                                                                   </li>
+                                                                   <h1>CSS Externo</h1>
+                                                                   <li>
+                                                                       <p>
+                                                                           Por ultimo, temos o mais importa e o mais prático. O CSS Externo é uma página que criamos expecífica para modificações de CSS. Após isso, toda vez que quisermos utilizar um padrão de estilo, basta usarmos a tag "link:css" que será feito alterações automaticamente no site. E, também, caso precisemos, podemos fazer uma alteração "global". Ou seja, uma alteração que irá mudar todas as páginas que estiverem ancoradas com a do CSS
+                                                                       </p>
+                                                                   </li>
+                                           </ol>
+</section>
+<hr>
+<h1 style="background-color: rgba(153, 205, 50, 0.56);">MÓDULO 2</h1>
+                                       <hr>
+                                       <h1>Cores
+                                       </h1>
+                                       <p>A Psicologia de cores são algo extremamente importantes para o corpo do site, pois ela irá mexer com a cabeça do cliente. Assim, precisamos sabe o básico da paleta de cores para criar um site com cores agradáveis e, principalemente, harmonicas.
+                                       </p>
+                                       <p>
+                        Algumas das técnicas de cores são usadas em paletas (ou círculos cromáticos) que possuem cores PRIMARIAS, SECUNDÁRIAS, TERCIÁRIAS e possuímos vários jeitos de manipular elas. Dentro delas, há ás cores frias e quente. Também possuimos conjutos de cores, ou seja, várias combinações "prontas", como se fossem fórmulas.
+                                       </p>
+                                       <ul>
+                        <li> Cores Complmentares</li>
+                        <li>Cores Análogas</li>
+                        <li>Cores Análogas e uma Complementare</li>
+                        <li>Análogas Relacionadas</li>
+                        <li>Cores Intercaladas</li>
+                        <li>Cores triádicas</li>
+                        <li>Cores em quadrado</li>
+                        <li>Cores tetrádicas</li>
+                        <li>Monocromia</li>
+                                       </ul>
+                                       <p>
+                        Podemos ver essas coisas no site Abodle Color. Muito importante também é o site Paletton. Este faz uma simulação, montando um site, com as paletas de cores que você inserir lá.
+                                       </p>
+                                       <h1>Fontes</h1>
+                                       <p>
+                        As fontes são muito importantes para que possamos deixar o site mais bonito. Assim, podemos configurar do jeito "In-line" ou por uma arquivo de CSS que fará uma mudança global
+                                       </p>
+                                       <p>
+                        Podemos fazer diversas configurações, como:
+                                       </p>
+                                       <p>
+                        <ul>
+                            <li>altura</li>
+                            <li>estilo</li>
+                            <li>negrito/espessura</li>
+                            <li>sublinhado</li>
+                        </ul>
+                                       </p>
+                                       <hr>
+                                       <h1>Alinhamento</h1>
+                                       <p>
+                        Temos 4 tipos de alinhamentos em CSS, podendo ser eles:
+                                       </p>
+                                       <p>
+                        <ol>
+                            <li id="left"><abbr title="text-align: left;">Alinhamentoto à Esquerda</abbr></li>
+                            <li id="right"><abbr title="text-align: right;">Alinhamento à Direita</abbr></li>
+                            <li id="center"><abbr title="text-align: center;">Alinhamento Centralizado</abbr></li>
+                            <li id="justify"><abbr title="text-align: justify;">Alinhamento à Esquerda e à Direta</abbr></li>
+                        </ol>
+                                       </p>
+                                       <p>
+                        Também, podemos criar aquele "espaço de parágrafo" que vemos logo no início. Conseguimos também defir o tamanho desse espaço em PX.
+                        <abbr title="text-ident: (valor)px;">TAG:</abbr>
+                                       </p>
+                                       <hr>
+                                       <h1>ID</h1>
+                                       <p>
+                        Podemos fazer alterações específicas nas tags, ou seja, podemos alterar, na página de CSS, uma tag de h1, porém sem mudar as outras tag's que estão com h1.
+                        Basta apenas inserir na tag inline a "id=". Assim, na página de CSS, usamos "#" e o nome que colocamos na página html.
+                                       </p>
+                                       <h1>Class</h1>
+                                       <p>
+                        Diferente do ID que só pode ser utilizado UMA vez por página, ou seja, uma vez em uma tag, o Class cria um grupo onde qualquer tag que estver com "class=' '" sofrerá as mudanças. Assim, podemos alterar várias tag's sem afetar às outras
+                                       </p>
+                                       <p>
+                        Exemplo: Há 6 tag's h1 no site, porém, só quero personalizar 4 delas e deixar as outras 2 padrão. Então, vou na "página de CSS", crio a regra com "." e defino o nome dessa classe (qualquer nome). Após isso, personalizo o que quero pôr, vou nas 4 tag's da "pagina HTML" e insiro "class='(nome)'".
+                        Se fosse na ID, isso só poderia ser feito em 1 das 6 h1.
+                                       </p>
+                                       <h1>Pseudos</h1>
+                                       <h2>Classes</h2>
+                                       <p>
+                        podemos criar aquelas famosas interações com a página, como por exemplo, passar o mouse por cima e a cor da fonte se alterar. Para isso utilizaremos ás Pseudo-classes que consiste em fazer alteções. Primeiro devemos criar uma Div para começarmos a fazer mudanças. Após, mexeremos na Style para criar seletores.
+                                       </p>
+                                       <div id="block1">01</div>
+                                       <div id="block2">02</div>
+                                       <div id="block3">03</div>
+                                       <div id="block4">04</div>
+                                       <div>
+                        <p>Podemos também ocultar textos. Colocando uma tag dentro da div e inserindo ">" no seletor da div.</p>
+                                       </div>
+                                       <hr>
+                                       <h1>Boxes</h1>
+                                       <p>
+                        Podemos personalizar as boxes que usamos, já que boxes são qualquer elemento visível. Ou seja, tag's como h1, p, div e etc, são boxes e podemos personalizar o estilo delas.
+                                       </p>
+                                       <p id="abra">Exemplo de personalização </p>
+                                       <h2>Shadow Boxes</h2>
+                                       <p>
+                                           Podemos acrescentar sombra por duas formas, sendo elas:
+                                           <ul>
+                                               <li>Manual:</li>
+                                               <p>Podemos fazer com a Shorthands sendo a ordem: Deslocamento Horizontal; Deslocamento Vertical; Espalhamento e a Cor. </p>
+                                               <p>ficaria assim: Yx Yx Yx black</p>
+                                               <li>DevTool:</li>
+                                               <p>Este é um jeito mais prático. Na ferramenta de DevTools conseguimos abrir um painel apenas para isso. É uma forma mais prática pois você pode mexer "ao vivo" e de uma forma simples.</p>
+                                               Antes de usarmos isso, precisamos apenas inserir o código acima para que comece a aparecer no DevTools
+                                           </ul>
+                                       </p>
+                                       <hr>
+                                       
+                                       <h1>Shorthand</h1>
+                                       <p>Shorthands são nada mais do que a simplificação do código. Ou seja, ao invés de colocar "border-style", "border-width" e etc, podemos simples colocarmos os valores</p>
+                                       <p>
+                        Porém, para cada short há uma sequência que deve ser seguida, sendo ela: Width, Style, Color. (Para o uso de medidas)
+                                       </p>
+                                       <p>
+                        Há também para os padding. Esté utilizamos os lados para expressar as medidas, por exemplo "padding-left: 3px". Para utilizarmos do Shorthand, fazeremos na sequência do relógio, sendo: Top, Right, Bottom, Left
+                                       </p>
+                                       <hr>
+                                       <section class="variaveis">
+                                           <h1>Variáveis</h1>
+                                           <p>É possível criar uma variável para nosso site que tem a função de facilitar a vida. Basicamente funciona como um código raiz. Assim, quando quisermos pôr uma cor, ao invermos de inserir toda aquela linha de código, podemos simplesmente usar a variável que programamos. 
+                                           </p>
+                                           <p>
+                                            Exemplo- Cor 1: (cor); 
+                                            Cor 2: (cor);
+                                            Assim, basta apenas inserirmos a tag de variável e depois "Cor 2".
+                                           </p>
+                                       </section>
+                                       <p>
+                                        Aside= conteúdos perifericos
+                                        footer= rodapé
+                                        main= counteúdo principal; falar apenas da matéria do título
+                                        nav= links; lugar onde fica os links para acessar outras partes do site como "fale conosco, notícias, home"
+                                       </p>
+                   </main>
+            
+</body>
+</html>
