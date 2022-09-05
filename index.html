@@ -8,26 +8,6 @@
     <link rel="shortcut icon" href="Goescat-Macaron-Gimp.ico" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
     <style>  
-        div{
-            display: inline-block;
-            background-color: gray;
-            height: 100px;
-            width: 100px;
-            text-align: center;
-        }
-
-        div:hover {
-            background-color: yellowgreen;
-        }
-
-        div > p {
-            display: none;
-        }
-
-        div:hover > p {
-            display: block;
-            background-color: gray;
-        }
     </style>
 </head>
 <body>
@@ -300,12 +280,10 @@
                                        <p>
                         podemos criar aquelas famosas interações com a página, como por exemplo, passar o mouse por cima e a cor da fonte se alterar. Para isso utilizaremos ás Pseudo-classes que consiste em fazer alteções. Primeiro devemos criar uma Div para começarmos a fazer mudanças. Após, mexeremos na Style para criar seletores.
                                        </p>
-                                       <div id="block1">01</div>
-                                       <div id="block2">02</div>
-                                       <div id="block3">03</div>
-                                       <div id="block4">04</div>
-                                       <div>
-                        <p>Podemos também ocultar textos. Colocando uma tag dentro da div e inserindo ">" no seletor da div.</p>
+                                       <div class="quadricular">01</div>
+                                       <div class="quadricular">02</div>
+                                       <div class="quadricular">03</div>                
+                                       <div class="quadricular4">04<p>Podemos também ocultar textos. Colocando uma tag dentro da div e inserindo ">" no seletor da div.</p>
                                        </div>
                                        <hr>
                                        <h1>Boxes</h1>
@@ -364,7 +342,25 @@
                                        <section class="quadrado" id="q1"></section>
                                        <section class="quadrado" id="q2"></section>
                                        <section class="quadrado" id="q3"></section>
-                   </main>
-            
+                                       <p>Por padrão, podemos ver que a imagem é repetida até completar o <strong>viewport</strong></p>
+                                       <p>Conseguimos fazer diversas alterações sobre essa caracteristica como </p>
+                                       <ul>
+                                        <li>background-size: Xpx Xpx (Tamanho da imagem)</li>
+                                        <li>background-repeat: no-repeat (Imagem nao será repetida)</li>
+                                        <li>background-repeat: repeat-y/x (Imagem será repetida apenas no eixo Y ou X)</li>
+                                        <li>background-position: Posição que começará da imagem sempre primeiro a <strong>Coluna</strong> e depois a <strong>Vetical</strong> (ex: Right Bottom)</li>
+                                       </ul>
+                                       <hr>
+                                       <h2>Posição de Imagens</h2>
+                                       <p>Assim como no tópico anterior, podemos alterar a posição que uma imagem se iniciará. Veja abaixo</p>
+                                           <div class="block" id="w1"></div>
+                                           <span> Left-Top</span>
+                                           <div class="block" id="w2"></div>
+                                           <span> Left-Center</span>
+                                           <div class="block" id="w3"></div>
+                                           <span>Right-Bottom</span>
+                                           <div class="block" id="w4"></div>
+                                           <span>Center-Center</span>
+                                           <p>*Caso ao darmos um background-position e a imagem não ficarmos na posição que queríamos, devemos dar um "<strong>height: 100vh</strong>"</p>
 </body>
 </html>

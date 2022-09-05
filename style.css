@@ -138,6 +138,45 @@ header{
     border-color: rgba(22, 21, 21, 0.415);
     border-radius: 10px;}
 
+
+
+
+    .quadricular{
+        display: inline-block;
+        background-color: gray;
+        height: 100px;
+        width: 100px;
+        text-align: center;
+    }
+    .quadricular:hover {
+        background-color: yellowgreen;
+        
+    }
+    .quadricular p{
+        display: none;
+    }
+
+
+.quadricular4{
+    display: inline-block;
+        background-color: gray;
+        height: 100px;
+        width: 100px;
+        font-size: 16px;
+}
+.quadricular4 p{
+    display: none;
+}
+.quadricular4:hover{
+    display: inline-block;
+    background-color: yellowgreen;
+    height: 100px;
+    width: 100px;
+}
+.quadricular4:hover p{
+    display: block;
+    background-color: yellowgreen;}
+
     .quadrado{
         display: inline-block;
         border: 1px solid black;
@@ -158,6 +197,29 @@ header{
     .listasback{
         display: flex;
         justify-content: space-around;
+    }
+
+    .block{
+        background-image: url(imagensP2/wallpaper003.jpg);
+        height: 200px;
+        border: 1px solid black;
+        border-radius: 20px;
+        margin: 10px;
+    }
+    span{
+        font-size: 9px;
+    }
+    #w1{
+        background-position: left top;
+    }
+    #w2{
+        background-position: left center;
+    }
+    #w3{
+        background-position: right bottom;
+    }
+    #w4{
+        background-position:  center center;
     }
 
 
