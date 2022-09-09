@@ -363,21 +363,34 @@
                                            <span>Center-Center</span>
                                            <p>*Caso ao darmos um background-position e a imagem não ficarmos na posição que queríamos, devemos dar um "<strong>height: 100vh</strong>"</p>
                                            <hr>
+
+
                                            <h1>Tamanho da Imagem de fundo</h1>
                                            <p>Há várias formas de redimensionar a imagem para força-lá a caber na caixa. Por padrão, nenhum redimensionamento será aplicado, e a imagem será exibida do seu tamanho natural. Porém, podemos usar propriedades background-size para alterar esse comportamento. </p>
+
                                            <ul>
                                             <li>background-size: auto - (padrão) a imagem do fundo será aplicada em seu tamanho original</li>
                                             <li>background-size: px ou % - Redimensiona a largura da imagem e faz altura se adaptar automaticamente. Podemos também informar as duas dimensões na sequência ou também usar valores percentuais.</li>
                                             <li>background-size: cover - Muda o tamanho da imagem para que ela seja sempre totalmente exibida na tela, sem nenhum corte.</li>
                                             <li>background-size: contain - Redimensiona a imagem para que ela cubra o contêiner, mesmo que para isso ocorram alguns eventuais cortes.</li>
                                            </ul>
-                                           <p>Dentre todas as opções a melhor que se destaca é a <strong>Contain</strong> já que ela vai tentar ser fiel ao tamanho original da imagem sem distorcer.</p>
+
+                                           <p>Dentre todas as opções a melhor que se destaca é a <strong>cover</strong> já que ela vai tentar ser fiel ao tamanho original da imagem sem distorcer.</p>
                                            <p>Outra propriedade que possuimos alem da Size seria a <strong>attachment</strong> (vínculo). Ela tem como função de vincular a imagem de  fundo com o resto do documento, principalemente se o conteúdo for <strong>maior</strong> do que a altura da página e seja necessário vazar uma rolagem vertical</p>
                                            <p>Algumas propriedades do attachment são:</p>
+
                                            <ul>
                                             <li>background-attachment: Scroll - (padrão) a imagem do fundp vai rolar junto com o conteúdo</li>
                                             <li>background-attachment: Fixed - A imagem de fundo vai ficar fixada enquanto o conteúdo vai ser rolado</li>
                                            </ul>
+
+                                           <p>*A melhor combinação para backgound seria a background-size: contain com background-attachment: Fixed</p>
+                                           <p> Para facilitar todos esse códigos, podemos utilizar uma <strong>Shorthand</strong>, segundo essa sequência de códigos: </p>
+                                           <p><em>"background: [color] [image] [position] [repeat] <strong>[size]</strong> [attachment];"</em></p> <p>*A forma do size pode não funcionar na maioria dos navegadores, ou seja, é mais fácil criar a propria tag para o size do que incluir na Shorthand</p>
+                                           <hr>
+                                           <h1>Centralização vertical de Caixas</h1>
+                                           
+                                           
 
 </body>
 </html>
