@@ -389,8 +389,27 @@
                                            <p><em>"background: [color] [image] [position] [repeat] <strong>[size]</strong> [attachment];"</em></p> <p>*A forma do size pode não funcionar na maioria dos navegadores, ou seja, é mais fácil criar a propria tag para o size do que incluir na Shorthand</p>
                                            <hr>
                                            <h1>Centralização vertical de Caixas</h1>
-                                           
-                                           
+                                           <p>Centralização de caixas é um dos temas mais importantes na área de programação. Para entendermos, criaremos um <strong>contêiner</strong> e dentro dele iremos colocar outro elemento para tentarmos centralizar.</p>
+                                               <div class="bc12">
+                                                   <div class="c1">
+                                                    1
+                                                    <div class="bc1">
+                                                        2
+                                                    </div>
+                                                   </div>
+                                                   <span>Antes de Position: absolute </span>
+                                                   <div class="c1">
+                                                    1
+                                                    <div class="bc2">
+                                                        2
+                                                    </div>
+                                                   </div>
+                                                   <span>Após Position: absolute e top: 50% left: 50%</span>
+                                               </div>
+                                           <p>Ao inserir no quadrado 1 a tag " <strong>position: relative</strong> e no quadrado 2, " <strong>position: absolute</strong> ". Isso permitirá mover livremente o quadrado 2, tendo como referência o quadrado 1. Para movermos livremento, usamos as tags "left" e "right", assim, o quadrado se movimentará a partir do ponto inicial do quadrado 1 (superior esquerdo).</p>
+                                           <h2>Transform</h2>
+                                           <p>Um problema do tópico anterir é que a mudança do posicionamento do quadrado 2 será com base no ponto inicial (superior esquerdo) do quadrado 1. Agora, caso desejamos mudar o posicionamento do quadrado 2, com base no atual posio dele, utilizaremos a tag " <strong>transform: translate (...)</strong> " </p>
+
 
 </body>
 </html>

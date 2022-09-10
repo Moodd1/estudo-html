@@ -221,8 +221,44 @@ header{
     #w4{
         background-position:  center center;
     }
+    .bc12{
+        display: flex;
+        justify-content: space-around;
+    }
 
+    .c1{
+        
+        display: inline-block;
+        background-color: purple;
+        width: 400px;
+        height: 400px;
+        padding: 10px;
+        border: 3px solid black;
+        position: relative;
 
+        background-image: url(imagensP2/target001.png);
+        background-size: 100% 100%;
+    }
+    .bc1{
+        width: 150px;
+        height: 150px;
+        background-color: whitesmoke;
+        border: 1px solid black;
+        background-image: url(imagensP2/target001.png);
+        background-size: 100% 100%;
+    }
+    .bc2{
+        position: absolute;
+        width: 150px;
+        height: 150px;
+        background-color: whitesmoke;
+        border: 1px solid black;
+        background-image: url(imagensP2/target001.png);
+        background-size: 100% 100%;
+        
+        left: 50%;
+        top: 50%;
+    }
 #left {
     text-align: left;
 }
