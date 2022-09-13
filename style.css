@@ -259,6 +259,20 @@ header{
         left: 50%;
         top: 50%;
     }
+    .bc3{
+        position: absolute;
+        width: 150px;
+        height: 150px;
+        background-color: whitesmoke;
+        border: 1px solid black;
+        background-image: url(imagensP2/target001.png);
+        background-size: 100% 100%;
+        
+        left: 50%;
+        top: 50%;
+
+        transform: translate(-50%, -50%);
+    }
 #left {
     text-align: left;
 }
