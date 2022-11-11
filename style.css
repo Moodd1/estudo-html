@@ -308,3 +308,11 @@ header{
     outline-color: rgb(70, 70, 70);
     outline-style: inset;
 }
+
+.tx1e{
+    text-transform: uppercase;
+}
+
+.tx2e{
+    font-variant: small-caps;
+}

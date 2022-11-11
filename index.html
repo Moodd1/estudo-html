@@ -45,6 +45,12 @@
 <p>TAB para dar espaço ao código no VSC</p>
 <p>Tag c para criar um comentário em html</p>
 <p>Em vez de segurar o alt e clicar um por um, você pode apertar o scroll, e então rolar pra cima/baixo, vai automaticamente selecionar onde o cursor passar</p>
+<p>Para deixar o código mais limpo no CSS, podemos inserir todas as tags que recebeção a mesma função, bastando usar apenas a virgula</p>
+<code>
+    <span>header a, footer a, main a{</span>
+    <span>color white;</span>
+    <span>}</span>
+</code>
 
 <hr>
 <section class="listas">
@@ -155,274 +161,283 @@
 </section>
 <hr>
 <section class="imagens">
-                                       <h1>Imagens Dinâmicas</h1>
-                                       <p>
-                                        Ao inserirmos uma imagem, podemos ter um problema de dinâmica, onde a renderização da imagem acaba por ser diferente da "tela oferecida". Ou seja, ao abrirmos uma imagem grande pelo computador, onde há uma tela maior, a imagem acabará por ficar "justa". Agora, ao abrirmos pelo celular, onde possui uma tela menor, esta imagem ficará exageradamente maior e estragará a experiência do usuário.
-                                       </p>
-                        <p>
-                            Podemos fazer com que uma imagem, ao atingir o tamanho em px programado, altere a figura.
-                        </p>
-                        <position class="posicao">
-                            <picture class="imagens-posicao">
-                            <source class="imagens-1" media="(max-width: 1050px)" srcset="imagens/m7.jpg" type="image/jpg">
-                            <img class="imagens-2" src="imagens/m6.jpg" alt="imagem flexivel"> 
-                            <!--Neste caso, a tag IMG será a base e, caso página tenha menos de 1050px, aparecerá a Source-->
-                            </picture>
-                        </position>
-                        <h4>
-                            (Diminua a janela do navegador para alterar a imagem)
-                        </h4>
+        <h1>Imagens Dinâmicas</h1>
+        <p>
+         Ao inserirmos uma imagem, podemos ter um problema de dinâmica, onde a renderização da imagem acaba por ser diferente da "tela oferecida". Ou seja, ao abrirmos uma imagem grande pelo computador, onde há uma tela maior, a imagem acabará por ficar "justa". Agora, ao abrirmos pelo celular, onde possui uma tela menor, esta imagem ficará exageradamente maior e estragará a experiência do usuário.
+        </p>
+     <p>
+         Podemos fazer com que uma imagem, ao atingir o tamanho em px programado, altere a figura.
+     </p>
+     <position class="posicao">
+         <picture class="imagens-posicao">
+         <source class="imagens-1" media="(max-width: 1050px)" srcset="imagens/m7.jpg" type="image/jpg">
+         <img class="imagens-2" src="imagens/m6.jpg" alt="imagem flexivel"> 
+         <!--Neste caso, a tag IMG será a base e, caso página tenha menos de 1050px, aparecerá a Source-->
+         </picture>
+     </position>
+     <h4>
+         (Diminua a janela do navegador para alterar a imagem)
+     </h4>
 </section>
 <hr>
 <section class="audios">
-                                           <h1>Áudios</h1>
-                                           <p>
-                                                                   Podemos pôr diversos tipos de áudios como <cite>MP3, OGG, WAV</cite> e etc. Assim como também podemos escolher para tocar manualmente, automaticamente ou quando todo o site carregar para o usuário.
-                                           </p>
-                                           <p> Podemos utilizar a tag "source" para defirmos mais de uma opção. Ou seja, podemos pôr o mesmo áudio em dois tipos de aquivos; mp3 e ogg. Assim, se o navegador nao reconhecer a Source do MP3, irá utilizar a Source da OGG. Isso se aplica a qualquer tipo de fonte, não só áudios.</p>
-                                           <audio controls>
-                                                                   <source src="Audios/Maestria.mp3" type="audio/mpeg">
-                                           </audio>
+       <h1>Áudios</h1>
+       <p>
+                               Podemos pôr diversos tipos de áudios como <cite>MP3, OGG, WAV</cite> e etc. Assim como também podemos escolher para tocar manualmente, automaticamente ou quando todo o site carregar para o usuário.
+       </p>
+       <p> Podemos utilizar a tag "source" para defirmos mais de uma opção. Ou seja, podemos pôr o mesmo áudio em dois tipos de aquivos; mp3 e ogg. Assim, se o navegador nao reconhecer a Source do MP3, irá utilizar a Source da OGG. Isso se aplica a qualquer tipo de fonte, não só áudios.</p>
+       <audio controls>
+                               <source src="Audios/Maestria.mp3" type="audio/mpeg">
+       </audio>
 </section>
 <hr>
 <section class="css">
-                                           <h1>CSS</h1>
-                                           <ol>
-                                                                   <h1>CSS In-Line</h1>
-                                                                   <li>
-                                                                       <p style="text-align: justify;">
-                                                                           Temos o método mais "atrasado" que seria o jeito "Inline". Como pelo próprio nome diz, utilizamos esse método direto na tag para mudar o visual. Entretanto, por ser inline, acaba por dificultar a praticidade já que precisaremos pôr a alteração de tag em tag. Ou seja, se mudarmos a cor de uma frase e quisermos mudar do restante, precisaremos fazer de tag em tag.
-                                                                       </p>
-                                                                       <h3>
-                                                                           o texto acima está alinhado devido a tag "text-align: justify"
-                                                                       </h3>
-                                                                   </li>
-                                                                   <h1>CSS Interno</h1>
-                                                                   <li>
-                                                                       <p>
-                                                                           Outro método seria o CSS Interno que tem como função de alterar de uma forma em geral todas as tags selecionadas. Tudo isso é feito pelo Style dentro de Head. Ou seja, caso desejemos mudar 5 tag's "h1", com o CSS Interno conseguiríamos rapidamente se compadado com método anterior
-                                                                       </p>
-                                                                   </li>
-                                                                   <h1>CSS Externo</h1>
-                                                                   <li>
-                                                                       <p>
-                                                                           Por ultimo, temos o mais importa e o mais prático. O CSS Externo é uma página que criamos expecífica para modificações de CSS. Após isso, toda vez que quisermos utilizar um padrão de estilo, basta usarmos a tag "link:css" que será feito alterações automaticamente no site. E, também, caso precisemos, podemos fazer uma alteração "global". Ou seja, uma alteração que irá mudar todas as páginas que estiverem ancoradas com a do CSS
-                                                                       </p>
-                                                                   </li>
-                                           </ol>
+<h1>CSS</h1>
+<ol>
+ <h1>CSS In-Line</h1>
+ <li>
+     <p style="text-align: justify;">
+         Temos o método mais "atrasado" que seria o jeito "InlComo pelo próprio nome diz, utilizamos esse método diretag para mudar o visual. Entretanto, por ser inline, por dificultar a praticidade já que precisaremos alteração de tag em tag. Ou seja, se mudarmos a cor dfrase e quisermos mudar do restante, precisaremos faztag em tag.
+     </p>
+     <h3>
+         o texto acima está alinhado devido a tag "text-ajustify"
+     </h3>
+ </li>
+ <h1>CSS Interno</h1>
+ <li>
+     <p>
+         Outro método seria o CSS Interno que tem como funçalterar de uma forma em geral todas as tags selecionTudo isso é feito pelo Style dentro de Head. Ou seja,desejemos mudar 5 tag's "h1", com o CSS Inconseguiríamos rapidamente se compadado com método anterior
+     </p>
+ </li>
+ <h1>CSS Externo</h1>
+ <li>
+     <p>
+         Por ultimo, temos o mais importa e o mais prático. Externo é uma página que criamos expecíficamodificações de CSS. Após isso, toda vez que quisutilizar um padrão de estilo, basta usarmos a tag "linkque será feito alterações automaticamente no sittambém, caso precisemos, podemos fazer uma alte"global". Ou seja, uma alteração que irá mudar todpáginas que estiverem ancoradas com a do CSS
+     </p>
+ </li>
+</ol>
 </section>
 <hr>
 <h1 style="background-color: rgba(153, 205, 50, 0.56);">MÓDULO 2</h1>
-                                       <hr>
-                                       <h1>Cores
-                                       </h1>
-                                       <p>A Psicologia de cores são algo extremamente importantes para o corpo do site, pois ela irá mexer com a cabeça do cliente. Assim, precisamos sabe o básico da paleta de cores para criar um site com cores agradáveis e, principalemente, harmonicas.
-                                       </p>
-                                       <p>
-                        Algumas das técnicas de cores são usadas em paletas (ou círculos cromáticos) que possuem cores PRIMARIAS, SECUNDÁRIAS, TERCIÁRIAS e possuímos vários jeitos de manipular elas. Dentro delas, há ás cores frias e quente. Também possuimos conjutos de cores, ou seja, várias combinações "prontas", como se fossem fórmulas.
-                                       </p>
-                                       <ul>
-                        <li> Cores Complmentares</li>
-                        <li>Cores Análogas</li>
-                        <li>Cores Análogas e uma Complementare</li>
-                        <li>Análogas Relacionadas</li>
-                        <li>Cores Intercaladas</li>
-                        <li>Cores triádicas</li>
-                        <li>Cores em quadrado</li>
-                        <li>Cores tetrádicas</li>
-                        <li>Monocromia</li>
-                                       </ul>
-                                       <p>
-                        Podemos ver essas coisas no site Abodle Color. Muito importante também é o site Paletton. Este faz uma simulação, montando um site, com as paletas de cores que você inserir lá.
-                                       </p>
-                                       <h1>Fontes</h1>
-                                       <p>
-                        As fontes são muito importantes para que possamos deixar o site mais bonito. Assim, podemos configurar do jeito "In-line" ou por uma arquivo de CSS que fará uma mudança global
-                                       </p>
-                                       <p>
-                        Podemos fazer diversas configurações, como:
-                                       </p>
-                                       <p>
+                    <hr>
+                    <h1>Cores
+                    </h1>
+                    <p>A Psicologia de cores são algo extremamente importantes para o corpo do site, pois ela irá mexer com a cabeça do cliente. Assim, precisamos sabe o básico da paleta de cores para criar um site com cores agradáveis e, principalemente, harmonicas.
+                    </p>
+                    <p>
+     Algumas das técnicas de cores são usadas em paletas (ou círculos cromáticos) que possuem cores PRIMARIAS,SECUNDÁRIAS, TERCIÁRIAS e possuímos vários jeitos de manipular elas. Dentro delas, há ás cores frias e quente.Também possuimos conjutos de cores, ou seja, várias combinações "prontas", como se fossem fórmulas.
+                    </p>
+                    <ul>
+     <li> Cores Complmentares</li>
+     <li>Cores Análogas</li>
+     <li>Cores Análogas e uma Complementare</li>
+     <li>Análogas Relacionadas</li>
+     <li>Cores Intercaladas</li>
+     <li>Cores triádicas</li>
+     <li>Cores em quadrado</li>
+     <li>Cores tetrádicas</li>
+     <li>Monocromia</li>
+                    </ul>
+                    <p>
+     Podemos ver essas coisas no site Abodle Color. Muito importante também é o site Paletton. Este faz umasimulação, montando um site, com as paletas de cores que você inserir lá.
+                    </p>
+                    <h1>Fontes</h1>
+                    <p>
+     As fontes são muito importantes para que possamos deixar o site mais bonito. Assim, podemos configurar do jeito"In-line" ou por uma arquivo de CSS que fará uma mudança global
+                    </p>
+                    <p>
+     Podemos fazer diversas configurações, como:
+                    </p>
+                    <p>
+     <ul>
+         <li>altura</li>
+         <li>estilo</li>
+         <li>negrito/espessura</li>
+         <li>sublinhado</li>
+     </ul>
+                    </p>
+                    <hr>
+                    <h1>Alinhamento</h1>
+                    <p>
+     Temos 4 tipos de alinhamentos em CSS, podendo ser eles:
+                    </p>
+                    <p>
+     <ol>
+         <li id="left"><abbr title="text-align: left;">Alinhamentoto à Esquerda</abbr></li>
+         <li id="right"><abbr title="text-align: right;">Alinhamento à Direita</abbr></li>
+         <li id="center"><abbr title="text-align: center;">Alinhamento Centralizado</abbr></li>
+         <li id="justify"><abbr title="text-align: justify;">Alinhamento à Esquerda e à Direta</abbr></li>
+     </ol>
+                    </p>
+                    <p>
+     Também, podemos criar aquele "espaço de parágrafo" que vemos logo no início. Conseguimos também defir o tamanhodesse espaço em PX.
+     <abbr title="text-ident: (valor)px;">TAG:</abbr>
+                    </p>
+                    <hr>
+                    <h1>ID</h1>
+                    <p>
+     Podemos fazer alterações específicas nas tags, ou seja, podemos alterar, na página de CSS, uma tag de h1, porémsem mudar as outras tag's que estão com h1.
+     Basta apenas inserir na tag inline a "id=". Assim, na página de CSS, usamos "#" e o nome que colocamos napágina html.
+                    </p>
+                    <h1>Class</h1>
+                    <p>
+     Diferente do ID que só pode ser utilizado UMA vez por página, ou seja, uma vez em uma tag, o Class cria umgrupo onde qualquer tag que estver com "class=' '" sofrerá as mudanças. Assim, podemos alterar várias tag's semafetar às outras
+                    </p>
+                    <p>
+     Exemplo: Há 6 tag's h1 no site, porém, só quero personalizar 4 delas e deixar as outras 2 padrão. Então, vou na"página de CSS", crio a regra com "." e defino o nome dessa classe (qualquer nome). Após isso, personalizo oque quero pôr, vou nas 4 tag's da "pagina HTML" e insiro "class='(nome)'".
+     Se fosse na ID, isso só poderia ser feito em 1 das 6 h1.
+                    </p>
+                    <h1>Pseudos</h1>
+                    <h2>Classes</h2>
+                    <p>
+     podemos criar aquelas famosas interações com a página, como por exemplo, passar o mouse por cima e a cor dafonte se alterar. Para isso utilizaremos ás Pseudo-classes que consiste em fazer alteções. Primeiro devemoscriar uma Div para começarmos a fazer mudanças. Após, mexeremos na Style para criar seletores.
+                    </p>
+                    <div class="quadricular">01</div>
+                    <div class="quadricular">02</div>
+                    <div class="quadricular">03</div>                
+                    <div class="quadricular4">04<p>Podemos também ocultar textos. Colocando uma tag dentro da div e inserindo ">" no seletor da div.</p>
+                    </div>
+                    <hr>
+                    <h1>Boxes</h1>
+                    <p>
+     Podemos personalizar as boxes que usamos, já que boxes são qualquer elemento visível. Ou seja, tag's como h1,p, div e etc, são boxes e podemos personalizar o estilo delas.
+                    </p>
+                    <p id="abra">Exemplo de personalização </p>
+                    <h2>Shadow Boxes</h2>
+                    <p>
+                        Podemos acrescentar sombra por duas formas, sendo elas:
                         <ul>
-                            <li>altura</li>
-                            <li>estilo</li>
-                            <li>negrito/espessura</li>
-                            <li>sublinhado</li>
+                            <li>Manual:</li>
+                            <p>Podemos fazer com a Shorthands sendo a ordem: Deslocamento Horizontal; Deslocamento Vertical; Espalhamento e a Cor. </p>
+                            <p>ficaria assim: Yx Yx Yx black</p>
+                            <li>DevTool:</li>
+                            <p>Este é um jeito mais prático. Na ferramenta de DevTools conseguimos abrir um painel apenas para isso. É uma forma mais prática pois você pode mexer "ao vivo" e de uma forma simples.</p>
+                            Antes de usarmos isso, precisamos apenas inserir o código acima para que comece a aparecer no DevTools
                         </ul>
-                                       </p>
-                                       <hr>
-                                       <h1>Alinhamento</h1>
-                                       <p>
-                        Temos 4 tipos de alinhamentos em CSS, podendo ser eles:
-                                       </p>
-                                       <p>
-                        <ol>
-                            <li id="left"><abbr title="text-align: left;">Alinhamentoto à Esquerda</abbr></li>
-                            <li id="right"><abbr title="text-align: right;">Alinhamento à Direita</abbr></li>
-                            <li id="center"><abbr title="text-align: center;">Alinhamento Centralizado</abbr></li>
-                            <li id="justify"><abbr title="text-align: justify;">Alinhamento à Esquerda e à Direta</abbr></li>
-                        </ol>
-                                       </p>
-                                       <p>
-                        Também, podemos criar aquele "espaço de parágrafo" que vemos logo no início. Conseguimos também defir o tamanho desse espaço em PX.
-                        <abbr title="text-ident: (valor)px;">TAG:</abbr>
-                                       </p>
-                                       <hr>
-                                       <h1>ID</h1>
-                                       <p>
-                        Podemos fazer alterações específicas nas tags, ou seja, podemos alterar, na página de CSS, uma tag de h1, porém sem mudar as outras tag's que estão com h1.
-                        Basta apenas inserir na tag inline a "id=". Assim, na página de CSS, usamos "#" e o nome que colocamos na página html.
-                                       </p>
-                                       <h1>Class</h1>
-                                       <p>
-                        Diferente do ID que só pode ser utilizado UMA vez por página, ou seja, uma vez em uma tag, o Class cria um grupo onde qualquer tag que estver com "class=' '" sofrerá as mudanças. Assim, podemos alterar várias tag's sem afetar às outras
-                                       </p>
-                                       <p>
-                        Exemplo: Há 6 tag's h1 no site, porém, só quero personalizar 4 delas e deixar as outras 2 padrão. Então, vou na "página de CSS", crio a regra com "." e defino o nome dessa classe (qualquer nome). Após isso, personalizo o que quero pôr, vou nas 4 tag's da "pagina HTML" e insiro "class='(nome)'".
-                        Se fosse na ID, isso só poderia ser feito em 1 das 6 h1.
-                                       </p>
-                                       <h1>Pseudos</h1>
-                                       <h2>Classes</h2>
-                                       <p>
-                        podemos criar aquelas famosas interações com a página, como por exemplo, passar o mouse por cima e a cor da fonte se alterar. Para isso utilizaremos ás Pseudo-classes que consiste em fazer alteções. Primeiro devemos criar uma Div para começarmos a fazer mudanças. Após, mexeremos na Style para criar seletores.
-                                       </p>
-                                       <div class="quadricular">01</div>
-                                       <div class="quadricular">02</div>
-                                       <div class="quadricular">03</div>                
-                                       <div class="quadricular4">04<p>Podemos também ocultar textos. Colocando uma tag dentro da div e inserindo ">" no seletor da div.</p>
-                                       </div>
-                                       <hr>
-                                       <h1>Boxes</h1>
-                                       <p>
-                        Podemos personalizar as boxes que usamos, já que boxes são qualquer elemento visível. Ou seja, tag's como h1, p, div e etc, são boxes e podemos personalizar o estilo delas.
-                                       </p>
-                                       <p id="abra">Exemplo de personalização </p>
-                                       <h2>Shadow Boxes</h2>
-                                       <p>
-                                           Podemos acrescentar sombra por duas formas, sendo elas:
-                                           <ul>
-                                               <li>Manual:</li>
-                                               <p>Podemos fazer com a Shorthands sendo a ordem: Deslocamento Horizontal; Deslocamento Vertical; Espalhamento e a Cor. </p>
-                                               <p>ficaria assim: Yx Yx Yx black</p>
-                                               <li>DevTool:</li>
-                                               <p>Este é um jeito mais prático. Na ferramenta de DevTools conseguimos abrir um painel apenas para isso. É uma forma mais prática pois você pode mexer "ao vivo" e de uma forma simples.</p>
-                                               Antes de usarmos isso, precisamos apenas inserir o código acima para que comece a aparecer no DevTools
-                                           </ul>
-                                       </p>
-                                       <hr>
-                                       
-                                       <h1>Shorthand</h1>
-                                       <p>Shorthands são nada mais do que a simplificação do código. Ou seja, ao invés de colocar "border-style", "border-width" e etc, podemos simples colocarmos os valores</p>
-                                       <p>
-                        Porém, para cada short há uma sequência que deve ser seguida, sendo ela: Width, Style, Color. (Para o uso de medidas)
-                                       </p>
-                                       <p>
-                        Há também para os padding. Esté utilizamos os lados para expressar as medidas, por exemplo "padding-left: 3px". Para utilizarmos do Shorthand, fazeremos na sequência do relógio, sendo: Top, Right, Bottom, Left
-                                       </p>
-                                       <hr>
-                                       <section class="variaveis">
-                                           <h1>Variáveis</h1>
-                                           <p>É possível criar uma variável para nosso site que tem a função de facilitar a vida. Basicamente funciona como um código raiz. Assim, quando quisermos pôr uma cor, ao invermos de inserir toda aquela linha de código, podemos simplesmente usar a variável que programamos. 
-                                           </p>
-                                           <p>
-                                            Exemplo- Cor 1: (cor); 
-                                            Cor 2: (cor);
-                                            Assim, basta apenas inserirmos a tag de variável e depois "Cor 2".
-                                           </p>
-                                       </section>
-                                       <p>
-                                        Aside= conteúdos perifericos
-                                        footer= rodapé
-                                        main= counteúdo principal; falar apenas da matéria do título
-                                        nav= links; lugar onde fica os links para acessar outras partes do site como "fale conosco, notícias, home"
-                                       </p>
-                                       <hr>
-                                       <h1>Imagem de fundo</h1>
-                                       <p>Primeiro iremos criar 3 quadrados como exemplo. Para isso, fazemos 3 tags div e colocamos class "quadrado". Damos um display em 'inline-block', inserimos um border e, por fim, width e height. Também podemos pôr outras persoanlizações a mais</p>
-                                       <p>Então, em cada quadrado podemos ver um exemplo.</p>
-                                       <ul class="listasback">
-                                        <li>1- Background-color</li>
-                                        <li>2- Background-image: linear-gradient</li>
-                                        <li>3- Background-image: url</li>
-                                       </ul>
-                                       <section class="quadrado" id="q1"></section>
-                                       <section class="quadrado" id="q2"></section>
-                                       <section class="quadrado" id="q3"></section>
-                                       <p>Por padrão, podemos ver que a imagem é repetida até completar o <strong>viewport</strong></p>
-                                       <p>Conseguimos fazer diversas alterações sobre essa caracteristica como </p>
-                                       <ul>
-                                        <li>background-size: Xpx Xpx (Tamanho da imagem)</li>
-                                        <li>background-repeat: no-repeat (Imagem nao será repetida)</li>
-                                        <li>background-repeat: repeat-y/x (Imagem será repetida apenas no eixo Y ou X)</li>
-                                        <li>background-position: Posição que começará da imagem sempre primeiro a <strong>Coluna</strong> e depois a <strong>Vetical</strong> (ex: Right Bottom)</li>
-                                       </ul>
-                                       <hr>
-                                       <h2>Posição de Imagens</h2>
-                                       <p>Assim como no tópico anterior, podemos alterar a posição que uma imagem se iniciará. Veja abaixo</p>
-                                           <div class="block" id="w1"></div>
-                                           <span> Left-Top</span>
-                                           <div class="block" id="w2"></div>
-                                           <span> Left-Center</span>
-                                           <div class="block" id="w3"></div>
-                                           <span>Right-Bottom</span>
-                                           <div class="block" id="w4"></div>
-                                           <span>Center-Center</span>
-                                           <p>*Caso ao darmos um background-position e a imagem não ficarmos na posição que queríamos, devemos dar um "<strong>height: 100vh</strong>"</p>
-                                           <hr>
+                    </p>
+                    <hr>
+                    
+                    <h1>Shorthand</h1>
+                    <p>Shorthands são nada mais do que a simplificação do código. Ou seja, ao invés de colocar "border-style", "border-width" e etc, podemos simples colocarmos os valores</p>
+                    <p>
+     Porém, para cada short há uma sequência que deve ser seguida, sendo ela: Width, Style, Color. (Para o uso demedidas)
+                    </p>
+                    <p>
+     Há também para os padding. Esté utilizamos os lados para expressar as medidas, por exemplo "padding-left: 3px".Para utilizarmos do Shorthand, fazeremos na sequência do relógio, sendo: Top, Right, Bottom, Left
+    </p>
+    <hr>
+    <section class="variaveis">
+        <h1>Variáveis</h1>
+        <p>É possível criar uma variável para nosso site que tem a função de facilitar a vida. Basicamente funciona como um código raiz. Assim, quando quisermos pôr uma cor, ao invermos de inserir toda aquela linha de código, podemos simplesmente usar a variável que programamos. 
+        </p>
+        <p>
+         Exemplo- Cor 1: (cor); 
+         Cor 2: (cor);
+         Assim, basta apenas inserirmos a tag de variável e depois "Cor 2".
+        </p>
+    </section>
+    <p>
+     Aside= conteúdos perifericos
+     footer= rodapé
+     main= counteúdo principal; falar apenas da matéria do título
+     nav= links; lugar onde fica os links para acessar outras partes do site como "fale conosco, notícias, home"
+    </p>
+    <hr>
+    <h1>Imagem de fundo</h1>
+    <p>Primeiro iremos criar 3 quadrados como exemplo. Para isso, fazemos 3 tags div e colclass "quadrado". Damos um display em 'inline-block', inserimos um border e, por fim, wheight. Também podemos pôr outras persoanlizações a mais</p>
+    <p>Então, em cada quadrado podemos ver um exemplo.</p>
+    <ul class="listasback">
+     <li>1- Background-color</li>
+     <li>2- Background-image: linear-gradient</li>
+     <li>3- Background-image: url</li>
+    </ul>
+    <section class="quadrado" id="q1"></section>
+    <section class="quadrado" id="q2"></section>
+    <section class="quadrado" id="q3"></section>
+    <p>Por padrão, podemos ver que a imagem é repetida até completar o <strong>viewport</strong></p>
+    <p>Conseguimos fazer diversas alterações sobre essa caracteristica como </p>
+    <ul>
+     <li>background-size: Xpx Xpx (Tamanho da imagem)</li>
+     <li>background-repeat: no-repeat (Imagem nao será repetida)</li>
+     <li>background-repeat: repeat-y/x (Imagem será repetida apenas no eixo Y ou X)</li>
+     <li>background-position: Posição que começará da imagem sempre primeiro a <strong>Coluna</strong> e depois a <strong>Vetical</strong> (ex: Right Bottom)</li>
+    </ul>
+    <hr>
+    <h2>Posição de Imagens</h2>
+    <p>Assim como no tópico anterior, podemos alterar a posição que uma imagem se iniciaráabaixo</p>
+        <div class="block" id="w1"></div>
+        <span> Left-Top</span>
+        <div class="block" id="w2"></div>
+        <span> Left-Center</span>
+        <div class="block" id="w3"></div>
+        <span>Right-Bottom</span>
+        <div class="block" id="w4"></div>
+        <span>Center-Center</span>
+        <p>*Caso ao darmos um background-position e a imagem não ficarmos na posição que queríamos, devemos dar um "<strong>height: 100vh</strong>"</p>
+        <hr>
 
 
-                                           <h1>Tamanho da Imagem de fundo</h1>
-                                           <p>Há várias formas de redimensionar a imagem para força-lá a caber na caixa. Por padrão, nenhum redimensionamento será aplicado, e a imagem será exibida do seu tamanho natural. Porém, podemos usar propriedades background-size para alterar esse comportamento. </p>
+        <h1>Tamanho da Imagem de fundo</h1>
+        <p>Há várias formas de redimensionar a imagem para força-lá a caber na caixa. Por padrão, nenhum redimensionamento será aplicado, e a imagem será exibida do seu tamanho natural. Porém, podemos usar propriedades background-size para alterar esse comportamento. </p>
 
-                                           <ul>
-                                            <li>background-size: auto - (padrão) a imagem do fundo será aplicada em seu tamanho original</li>
-                                            <li>background-size: px ou % - Redimensiona a largura da imagem e faz altura se adaptar automaticamente. Podemos também informar as duas dimensões na sequência ou também usar valores percentuais.</li>
-                                            <li>background-size: cover - Muda o tamanho da imagem para que ela seja sempre totalmente exibida na tela, sem nenhum corte.</li>
-                                            <li>background-size: contain - Redimensiona a imagem para que ela cubra o contêiner, mesmo que para isso ocorram alguns eventuais cortes.</li>
-                                           </ul>
+        <ul>
+         <li>background-size: auto - (padrão) a imagem do fundo será aplicada em seu tamanho original</li>
+         <li>background-size: px ou % - Redimensiona a largura da imagem e faz altura se adaptar automaticamente. Podemos também informar as duas dimensões na sequência ou também usar valores percentuais.</li>
+         <li>background-size: cover - Muda o tamanho da imagem para que ela seja sempre totalmente exibida na tela, sem nenhum corte.</li>
+         <li>background-size: contain - Redimensiona a imagem para que ela cubra o contêiner, mesmo que para isso ocorram alguns eventuais cortes.</li>
+        </ul>
 
-                                           <p>Dentre todas as opções a melhor que se destaca é a <strong>cover</strong> já que ela vai tentar ser fiel ao tamanho original da imagem sem distorcer.</p>
-                                           <p>Outra propriedade que possuimos alem da Size seria a <strong>attachment</strong> (vínculo). Ela tem como função de vincular a imagem de  fundo com o resto do documento, principalemente se o conteúdo for <strong>maior</strong> do que a altura da página e seja necessário vazar uma rolagem vertical</p>
-                                           <p>Algumas propriedades do attachment são:</p>
+        <p>Dentre todas as opções a melhor que se destaca é a <strong>cover</strong> já que ela vai tentar ser fiel ao tamanho original da imagem sem distorcer.</p>
+        <p>Outra propriedade que possuimos alem da Size seria a <strong>attachment</strong> (vínculo). Ela tem como função de vincular a imagem de  fundo com o resto do documento, principalemente se o conteúdo for <strong>maior</strong> do que a altura da página e seja necessário vazar uma rolagem vertical</p>
+        <p>Algumas propriedades do attachment são:</p>
 
-                                           <ul>
-                                            <li>background-attachment: Scroll - (padrão) a imagem do fundp vai rolar junto com o conteúdo</li>
-                                            <li>background-attachment: Fixed - A imagem de fundo vai ficar fixada enquanto o conteúdo vai ser rolado</li>
-                                           </ul>
+        <ul>
+         <li>background-attachment: Scroll - (padrão) a imagem do fundp vai rolar junto com o conteúdo</li>
+         <li>background-attachment: Fixed - A imagem de fundo vai ficar fixada enquanto o conteúdo vai ser rolado</li>
+        </ul>
 
-                                           <p>*A melhor combinação para backgound seria a background-size: contain com background-attachment: Fixed</p>
-                                           <p> Para facilitar todos esse códigos, podemos utilizar uma <strong>Shorthand</strong>, segundo essa sequência de códigos: </p>
-                                           <p><em>"background: [color] [image] [position] [repeat] <strong>[size]</strong> [attachment];"</em></p> <p>*A forma do size pode não funcionar na maioria dos navegadores, ou seja, é mais fácil criar a propria tag para o size do que incluir na Shorthand</p>
-                                           <hr>
-                                           <h1>Centralização vertical de Caixas</h1>
-                                           <p>Centralização de caixas é um dos temas mais importantes na área de programação. Para entendermos, criaremos um <strong>contêiner</strong> e dentro dele iremos colocar outro elemento para tentarmos centralizar.</p>
-                                               <div class="bc12">
-                                                   <div class="c1">
-                                                    1
-                                                    <div class="bc1">
-                                                        2
-                                                    </div>
-                                                   </div>
-                                                   <span>Antes de Position: absolute </span>
-                                                   <div class="c1">
-                                                    1
-                                                    <div class="bc2">
-                                                        2
-                                                    </div>
-                                                   </div>
-                                                   <span>Após Position: absolute e top: 50% left: 50%</span>
-                                               </div>
-                                           <p>Ao inserir no quadrado 1 a tag " <strong>position: relative</strong> e no quadrado 2, " <strong>position: absolute</strong> ". Isso permitirá mover livremente o quadrado 2, tendo como referência o quadrado 1. Para movermos livremento, usamos as tags "left" e "right", assim, o quadrado se movimentará a partir do ponto inicial do quadrado 1 (superior esquerdo).</p>
-                                           <h2>Transform</h2>
-                                           <p>Um problema do tópico anterir é que a mudança do posicionamento do quadrado 2 será com base no ponto inicial (superior esquerdo) do quadrado 1. Agora, caso desejamos mudar o posicionamento do quadrado 2, com base no atual posio dele, utilizaremos a tag " <strong>transform: translate (x, y);</strong> " </p>
-                                           <div class="c1">
-                                            1
-                                            <div class="bc3">
-                                                2
-                                            </div>
-                                           </div>
-                                           <span>Após o uso de "translate(-50%, -50%)"</span>
-
-
+        <p>*A melhor combinação para backgound seria a background-size: contain com background-attachment: Fixed</p>
+        <p> Para facilitar todos esse códigos, podemos utilizar uma <strong>Shorthand</strong>, segundo essa sequência de códigos: </p>
+        <p><em>"background: [color] [image] [position] [repeat] <strong>[size]</strong> [attachment];"</em></p> <p>*A forma do size pode não funcionar na maioria dos navegadores, ou seja, é mais fácil criar a propria tag para o size do que incluir na Shorthand</p>
+        <hr>
+        <h1>Centralização vertical de Caixas</h1>
+        <p>Centralização de caixas é um dos temas mais importantes na área de programação. Para entendermos, criaremos um <strong>contêiner</strong> e dentro dele iremos colocar outro elemento para tentarmos centralizar.</p>
+            <div class="bc12">
+                <div class="c1">
+                 1
+                 <div class="bc1">
+                     2
+                 </div>
+                </div>
+                <span>Antes de Position: absolute </span>
+                <div class="c1">
+                 1
+                 <div class="bc2">
+                     2
+                 </div>
+                </div>
+                <span>Após Position: absolute e top: 50% left: 50%</span>
+            </div>
+        <p>Ao inserir no quadrado 1 a tag " <strong>position: relative</strong> e no quadrado 2, " <strong>position: absolute</strong> ". Isso permitirá mover livremente o quadrado 2, tendo como referência o quadrado 1. Para movermos livremento, usamos as tags "left" e "right", assim, o quadrado se movimentará a partir do ponto inicial do quadrado 1 (superior esquerdo).</p>
+        <h2>Transform</h2>
+        <p>Um problema do tópico anterir é que a mudança do posicionamento do quadrado 2 será com base no ponto inicial (superior esquerdo) do quadrado 1. Agora, caso desejamos mudar o posicionamento do quadrado 2, com base no atual posio dele, utilizaremos a tag " <strong>transform: translate (x, y);</strong> " </p>
+        <div class="c1">
+         1
+         <div class="bc3">
+             2
+         </div>
+        </div>
+        <span>Após o uso de "translate(-50%, -50%)"</span>
+<hr>
+<h1>Projeto Cordel</h1>
+<h2>Transofrmação de Texto</h2>
+<p>Há duas tecnicas que podemos utilizar para alterar a fonte do nosso texto, sendo elas</p>
+<ul>
+    <li>text-transform: uppercase;</li>
+    <li>font-variant: small-caps;</li>
+</ul>
+<p>A diferença entre elas é que a primeira irá transformar o texto todo em maiúsculo. Já a segunda fará quase a mesma coisa, porém deixará a primeira letra maior do que as demais</p>
+<p class="tx1e">Exemplo de Uppercase</p>
+<p class="tx2e">Exemplo de Small-caps</p>
 </body>
 </html>
