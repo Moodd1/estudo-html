@@ -453,26 +453,53 @@
 </ul>
 <p>Porém para deixarmos as tabelas iguais vemos em outros sites, precisamos editar-las no Style ou Css com class ou id.</p>
 <code>
-    <span>table</span>
-    <span>tr</span>
-    <span>td  A1  td</span>
-    <span>td  A2  td</span>
-    <span>td  A3  td</span>
-    <span>tr</span>
+    <span>&lt;table&gt;</span>
+    <span>&lt;tr&gt;</span>
+    <span>&lt;td&gt;  A1  &lt;td&gt;</span>
+    <span>&lt;td&gt;  A2  &lt;td&gt;</span>
+    <span>&lt;td&gt;  A3  &lt;td&gt;</span>
+    <span>&lt;tr&gt;</span>
 
-    <span>tr</span>
-    <span>td  B1  td</span>
-    <span>td  B2  td</span>
-    <span>td  B3  td</span>
-    <span>tr</span>
+    <span>&lt;tr&gt;</span>
+    <span>&lt;td&gt;  B1  &lt;td&gt;</span>
+    <span>&lt;td&gt;  B2  &lt;td&gt;</span>
+    <span>&lt;td&gt;  B3  &lt;td&gt;</span>
+    <span>&lt;tr&gt;</span>
 
-    <span>table</span>
+    <span>&lt;table&gt;</span>
+ </code>
     <p>Assim, temos este resultado:</p>
-    <table>
-        <tr>
-            
-        </tr>
-    </table>
-</code>
+    <div class="tabelasmaster">
+        <div id="tabela1">
+            <table>
+                <tr>
+                    <td>A1</td>
+                    <td>A2</td>
+                    <td>A3</td>
+                </tr>
+                <tr>
+                    <td>B1</td>
+                    <td>B2</td>
+                    <td>B3</td>
+                </tr>
+            </table>
+        </div>
+<span><p>Após editar no CSS:</p></span>
+        <div id="tabela2">
+            <table>
+                <tr>
+                    <td>A1</td>
+                    <td>A2</td>
+                    <td>A3</td>
+                </tr>
+                <tr>
+                    <td>B1</td>
+                    <td>B2</td>
+                    <td>B3</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
 </body>
 </html>

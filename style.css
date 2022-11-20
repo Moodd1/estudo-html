@@ -21,6 +21,23 @@ header{
         margin: auto;
         margin-top: 20px;
     }
+
+
+code{
+        word-wrap:break-word;
+        white-space: pre-wrap;
+        background-color: lightblue;
+        display: block;
+        border-radius: 10px;
+        text-align: left;
+}
+code > span{
+    font-size: 16px;
+    text-align: left;
+    margin: 0px;
+    padding: 0px;
+}
+
 .cabeca{
     background-color: rgba(170, 170, 170, 0.395);
     padding: 10px;
@@ -325,4 +342,24 @@ header{
 
 .tx2e{
     font-variant: small-caps;
+}
+.tabelasmaster{
+    display: flex;
+    justify-content: space-around;
+    background-color: skyblue;
+}
+#tabela1{
+    display: inline-block;
+    width: 20vw;
+    background-color: rgba(128, 128, 128, 0.644);
+    border-radius: 10px;
+    padding: 15px;
+}
+#tabela2{
+    display: inline-block;
+    width: 20vw;
+    background-color: rgba(128, 128, 128, 0.644);
+    border-radius: 10px;
+    padding: 15px;
+    borderst
 }
