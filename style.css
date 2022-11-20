@@ -285,7 +285,17 @@ header{
 #justify {
     text-align: justify;
 }
+.imgparalax1{
+    background-image: url(ProjetoCordel/imagens/background001.jpg);
+    background-position: right center;
+    background-size: cover;
+    background-attachment: fixed;
 
+    height: 200px;
+    border: 1px solid black;
+    border-radius: 20px;
+    margin: 10px;
+}
 
 #abra {
     background-color: lightsteelblue;
